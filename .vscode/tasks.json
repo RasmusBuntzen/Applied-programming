@@ -1,0 +1,22 @@
+{
+			"tasks": [
+			  {
+				"type": "shell",
+				"label": "clang++.exe build main file",
+				"command": "C:\\Program Files\\LLVM\\bin\\clang++.exe",
+				"args": [
+				  "-g",                           # generate debug information
+				  "$G;\\My Drive\\Uni\\Kandidat\\År 1\\Blok 4\\Applied programming\\week 1\\main.cpp\\main.cpp",       # compile main.cpp
+				  "$G;\\My Drive\\Uni\\Kandidat\\År 1\\Blok 4\\Applied programming\\week 1\\Submission 1\\upload*.cpp", # and all .cpp in handin1
+				  "-Xclang",                      # these help remove some
+				  "-flto-visibility-public-std",  # warnings when using clang++
+				  "-o",                                   # call the output 
+				  "$G;\\My Drive\\Uni\\Kandidat\\År 1\\Blok 4\\Applied programming\\week 1\\handin1_main.exe"  # file handin1_main.exe
+				],
+				"options": {
+				  "cwd": "C;\\Program Files\\LLVM\\bin"
+				}
+			  }
+			],
+			"version": "2.0.0"
+}
