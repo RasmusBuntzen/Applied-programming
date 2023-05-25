@@ -1,0 +1,5 @@
+Exercise KNN
+-No errors found.
+
+Exercise LogReg
+-No errors found.
